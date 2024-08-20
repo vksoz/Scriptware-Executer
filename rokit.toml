@@ -1,0 +1,4 @@
+[tools]
+rojo = "rojo-rbx/rojo@7.4.2"
+asphalt = "jackTabsCode/asphalt@0.8.0"
+mantle = "blake-mealey/mantle@0.11.16"

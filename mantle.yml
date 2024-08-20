@@ -1,0 +1,29 @@
+owner: 'personal'
+
+environments:
+  - label: dev
+    branches: [dev, dev/*]
+    targetOverrides: 
+     configuration:
+       genre: all
+       playability: private
+       enableStudioAccessToApis: false
+       allowThirdPartySales: false
+       allowThirdPartyTeleports: false
+       avatarType: r15
+       avatarAnimationType: playerChoice
+       avatarCollisionType: outerBox
+  - label: production
+    branches: [main]
+
+target: 
+  experience: 
+   configuration:
+     genre: all
+     playability: public
+     enableStudioAccessToApis: false
+     allowThirdPartySales: false
+     allowThirdPartyTeleports: false
+     avatarType: r15
+     avatarAnimationType: playerChoice
+     avatarCollisionType: outerBox

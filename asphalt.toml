@@ -1,0 +1,15 @@
+asset_dir = "assets"
+exclude_assets = []
+write_dir = "places/common/src/shared/assets"
+
+[creator]
+# the type of creator, either user or group
+type = "user"
+# Your UserId/GroupId here
+id = 1
+
+[codegen]
+output_name = "assets"
+typescript = true
+style = "flat"
+strip_extension = true
