@@ -1,5 +1,6 @@
-import { createBroadcaster } from "@rbxts/reflex";
+import { createBroadcaster, loggerMiddleware } from "@rbxts/reflex";
 import { Events } from "server/network";
+import { APPLY_MIDDLEWARE } from "shared/constants/middleware";
 import { HydrateSerDes } from "shared/SerDes";
 import { SharedState, slices } from "shared/store";
 
@@ -21,3 +22,4 @@ Events.store.start.connect((player) => {
 });
 
 store.applyMiddleware(broadcaster.middleware);
+if (APPLY_MIDDLEWARE) store.applyMiddleware(loggerMiddleware);

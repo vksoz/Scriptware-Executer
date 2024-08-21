@@ -1,5 +1,6 @@
-import { createBroadcastReceiver } from "@rbxts/reflex";
+import { createBroadcastReceiver, loggerMiddleware } from "@rbxts/reflex";
 import { Events } from "client/network";
+import { APPLY_MIDDLEWARE } from "shared/constants/middleware";
 import { HydrateSerDes } from "shared/SerDes";
 
 import { store } from "..";
@@ -16,4 +17,4 @@ Events.store.hydrate.connect(({ buffer, blobs }) => {
 	receiver.hydrate(HydrateSerDes.deserialize(buffer, blobs));
 });
 store.applyMiddleware(receiver.middleware);
-// store.applyMiddleware(loggerMiddleware)
+if (APPLY_MIDDLEWARE) store.applyMiddleware(loggerMiddleware);
