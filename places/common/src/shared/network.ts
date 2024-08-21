@@ -4,7 +4,6 @@ import { Networking } from "@flamework/networking";
 interface ClientToServerEvents {}
 
 interface ServerToClientEvents {}
-
 interface ClientToServerFunctions {}
 
 interface ServerToClientFunctions {}

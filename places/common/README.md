@@ -1,2 +1,2 @@
 # Common Folder
-This folder stores all the code that is shared between games.
+This folder stores all the code that is shared between games. I personally do not want to use reflex or any state managers with common folder unless I find a better solution merging states together with different folders.

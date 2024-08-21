@@ -63,6 +63,7 @@
     "@rbxts/ui-labs": "2.2.0-ts.1",
     "@rbxts/vide": "0.4.4",
     "rbxts-transform-debug": "^2.2.0",
+    "rbxts-transform-env": "^2.2.0",
     "rbxts-transformer-t-new": "^1.1.5"
   }
 }
