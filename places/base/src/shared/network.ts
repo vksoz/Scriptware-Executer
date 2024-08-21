@@ -1,10 +1,21 @@
 /* eslint-disable @typescript-eslint/no-empty-object-type */
 import { Networking } from "@flamework/networking";
+import { BroadcastAction } from "@rbxts/reflex";
 
-interface ClientToServerEvents {}
+import { HydrateSerDes } from "./SerDes";
 
-interface ServerToClientEvents {}
+interface ClientToServerEvents {
+	store: {
+		start: () => void;
+	};
+}
 
+interface ServerToClientEvents {
+	store: {
+		dispatch: (actions: Array<BroadcastAction>) => void;
+		hydrate: (state: ReturnType<typeof HydrateSerDes.serialize>) => void;
+	};
+}
 interface ClientToServerFunctions {}
 
 interface ServerToClientFunctions {}
