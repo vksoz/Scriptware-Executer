@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:base": "rbxtsc --verbose -p ./places/base",
-    "watch:base": "rbxtsc -w --verbose ./places/base",
+    "watch:base": "rbxtsc -w --verbose -p ./places/base",
     "sync": "asphalt sync"
   },
   "keywords": [],
