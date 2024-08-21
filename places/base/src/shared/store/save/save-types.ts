@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-object-type */
 import { Flamework } from "@flamework/core";
 
 export interface PlayerSave {}
