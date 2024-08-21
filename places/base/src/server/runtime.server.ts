@@ -6,6 +6,7 @@ Flamework.addPaths("src/shared/components");
 
 Flamework.addPaths("../common/src/server/components");
 Flamework.addPaths("../common/src/server/services");
+Flamework.addPaths("../common/src/server/hooks");
 Flamework.addPaths("../common/src/shared/components");
 
 Flamework.ignite();
