@@ -1,6 +1,6 @@
 import { OnStart, Service } from "@flamework/core";
 import { MarketplaceService, Players } from "@rbxts/services";
-import { store } from "client/store";
+import { store } from "server/store";
 
 import { SaveService } from "./save-service";
 
