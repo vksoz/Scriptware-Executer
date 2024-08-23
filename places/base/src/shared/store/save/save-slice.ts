@@ -25,11 +25,10 @@ export const saveSlice = createProducer(initalState, {
 	patchPurchaseHistory: (
 		state,
 		player: Player,
-		purchaseInfo: { assetid: number; robux: number; timestamp: string | ISODate },
+		purchaseInfo: { purchaseid: string; robux: number; timestamp: string | ISODate },
 	) =>
 		produce(state, (draft) => {
 			print("ee");
 			Immut.table.insert(draft.get(player)!.purchaseHistory, purchaseInfo);
 		}),
 });
-

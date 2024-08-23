@@ -1,5 +1,6 @@
 import { OnStart, Service } from "@flamework/core";
-import { MarketplaceService } from "@rbxts/services";
+import { MarketplaceService, Players } from "@rbxts/services";
+import { store } from "client/store";
 
 import { SaveService } from "./save-service";
 
@@ -7,16 +8,22 @@ import { SaveService } from "./save-service";
 export class ProductService implements OnStart {
 	constructor(private saveService: SaveService) {}
 	onStart(): void {
-		print("hello worldS");
+		MarketplaceService.ProcessReceipt = this.ProcessReceipt;
 	}
-	private ProcessReceipt(receiptInfo: ReceiptInfo) {
-		print("ok");
-		return Enum.ProductPurchaseDecision.PurchaseGranted;
+	private ProcessReceipt(info: ReceiptInfo) {
+		const player = Players.GetPlayerByUserId(info.PlayerId)!;
+		store.patchPurchaseHistory(player, {
+			purchaseid: info.PurchaseId,
+			robux: info.CurrencySpent,
+			timestamp: DateTime.now().ToIsoDate(),
+		});
+		const [success] = pcall(() => {
+			this.saveService.ForceSave(player);
+		});
+		if (success) {
+			return Enum.ProductPurchaseDecision.PurchaseGranted;
+		} else {
+			return Enum.ProductPurchaseDecision.NotProcessedYet;
+		}
 	}
 }
-print("aa");
-function ProcessReceipt(receiptInfo: ReceiptInfo) {
-	print("e");
-	return Enum.ProductPurchaseDecision.PurchaseGranted;
-}
-MarketplaceService.ProcessReceipt = ProcessReceipt;

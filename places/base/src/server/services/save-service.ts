@@ -7,7 +7,7 @@ import { PlayerSerDes } from "shared/SerDes";
 import { selectPlayerSave } from "shared/store/save/save-selectors";
 import { DefaultPlayerSave } from "shared/store/save/save-types";
 
-import { retry } from "../../shared/utils/retrier";
+import { retry } from "../../shared/utils/retry";
 import { OnPlayerJoin } from "../hooks";
 
 @Service()
@@ -39,7 +39,7 @@ export class SaveService implements OnPlayerJoin {
 	 * Force saves the player document
 	 * @param player the document to force save
 	 */
-	public ForceSave(player: Player) {
-		retry(() => this.Documents.get(player)?.save());
+	public async ForceSave(player: Player) {
+		await retry(() => this.Documents.get(player)?.save());
 	}
 }

@@ -4,7 +4,7 @@ import { Flamework } from "@flamework/core";
 import { ISODate } from "../../../types/utils/roblox";
 
 export interface PlayerSave {
-	purchaseHistory: Array<{ assetid: number; robux: number; timestamp: string | ISODate }>;
+	purchaseHistory: Array<{ purchaseid: string; robux: number; timestamp: string | ISODate }>;
 }
 
 export const DefaultPlayerSave: PlayerSave = {
