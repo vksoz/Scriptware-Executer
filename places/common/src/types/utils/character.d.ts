@@ -1,4 +1,4 @@
 interface character extends Model {
-    HumanoidRootPart: Part
-    Humanoid: Humanoid
+	HumanoidRootPart: Part;
+	Humanoid: Humanoid;
 }

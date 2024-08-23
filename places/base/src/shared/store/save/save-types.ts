@@ -1,8 +1,14 @@
 /* eslint-disable @typescript-eslint/no-empty-object-type */
 import { Flamework } from "@flamework/core";
 
-export interface PlayerSave {}
+import { ISODate } from "../../../types/utils/roblox";
 
-export const DefaultPlayerSave: PlayerSave = {};
+export interface PlayerSave {
+	purchaseHistory: Array<{ assetid: number; robux: number; timestamp: string | ISODate }>;
+}
+
+export const DefaultPlayerSave: PlayerSave = {
+	purchaseHistory: new Array(),
+};
 
 export const PlayerSaveGuard = Flamework.createGuard<PlayerSave>();

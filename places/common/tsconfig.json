@@ -32,7 +32,10 @@
 			{
                 "transform": "rbxts-transform-env",
 				"defaultEnvironment": "common"
-            }
+            },
+			{
+                "transform": "rbxts-transformer-access"
+            },
 		]
 	},
 }

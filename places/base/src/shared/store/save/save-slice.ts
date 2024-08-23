@@ -1,9 +1,10 @@
-import { produce } from "@rbxts/immut";
+import Immut, { produce } from "@rbxts/immut";
 import { createProducer } from "@rbxts/reflex";
+
+import { ISODate } from "../../../types/utils/roblox";
 import { PlayerSave } from "./save-types";
 
 export type SaveState = Map<Player, PlayerSave>;
-
 const initalState: SaveState = new Map<Player, PlayerSave>();
 
 export const saveSlice = createProducer(initalState, {
@@ -19,6 +20,16 @@ export const saveSlice = createProducer(initalState, {
 
 	patchPlayerSave: (state, player: Player, patch: Partial<PlayerSave>) =>
 		produce(state, (draft) => {
-			draft.set(player, { ...(state.get(player) as PlayerSave), ...patch});
+			draft.set(player, { ...(state.get(player) as PlayerSave), ...patch });
+		}),
+	patchPurchaseHistory: (
+		state,
+		player: Player,
+		purchaseInfo: { assetid: number; robux: number; timestamp: string | ISODate },
+	) =>
+		produce(state, (draft) => {
+			print("ee");
+			Immut.table.insert(draft.get(player)!.purchaseHistory, purchaseInfo);
 		}),
 });
+

@@ -3,5 +3,6 @@ node_modules
 places/*/include
 places/*/flamework.build
 places/*/out
+places/*/dist
 
 .env

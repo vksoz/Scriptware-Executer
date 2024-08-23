@@ -32,7 +32,7 @@
 			{
                 "transform": "rbxts-transform-env",
 				"defaultEnvironment": "common"
-            }
+            },
 		]
 	},
 	"include": ["**/*", "../common/**/*"]

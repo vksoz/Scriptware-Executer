@@ -1,6 +1,7 @@
-import { Flamework, Modding, OnStart, Service } from "@flamework/core";
-import { OnPlayerJoin, OnPlayerLeave } from ".";
+import { Modding, OnStart, Service } from "@flamework/core";
 import { Players } from "@rbxts/services";
+
+import { OnPlayerJoin, OnPlayerLeave } from ".";
 
 @Service({ loadOrder: 1 })
 export class PlayerSpawnService implements OnStart {

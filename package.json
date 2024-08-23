@@ -4,16 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:base": "rbxtsc --verbose -p ./places/base",
+    "build:base": "rbxtsc --verbose -p ./places/base && darklua process places/base/out places/base/dist --verbose ",
     "watch:base": "rbxtsc -w --verbose -p ./places/base",
+    "process:base": "darklua process places/base/out places/base/dist --verbose -w",
+    "serve:base": "rojo serve places/base/darklua.project.json",
+    "lint": "eslint --max-warnings 0 .",
     "sync": "asphalt sync"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@rbxts/compiler-types": "^2.3.0-types.2",
-    "@rbxts/types": "^1.0.799",
+    "@rbxts/compiler-types": "2.3.0-types.2",
+    "@rbxts/types": "^1.0.801",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
     "eslint": "^8.57.0",
@@ -62,8 +65,10 @@
     "@rbxts/trove": "1.3.0",
     "@rbxts/ui-labs": "2.2.0-ts.1",
     "@rbxts/vide": "0.4.4",
+    "rbxts-build": "^2.4.0",
     "rbxts-transform-debug": "^2.2.0",
     "rbxts-transform-env": "^2.2.0",
+    "rbxts-transformer-access": "^1.1.2",
     "rbxts-transformer-t-new": "^1.1.5"
   }
 }

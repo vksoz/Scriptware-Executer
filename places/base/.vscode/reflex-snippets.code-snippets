@@ -1,0 +1,15 @@
+{
+"Reflex Slice": {
+		"prefix":[ "slice", "producer"],
+		"description": "Create a Reflex slice",
+		"body": [
+			"import { createProducer } from \"@rbxts/reflex\";",
+			"",
+			"export type ${TM_FILENAME_BASE/\\b-slice\\b/${1:/upcase}/g}State = undefined;",
+			"const initalState: ${TM_FILENAME_BASE/\\b-slice\\b/${1:/upcase}/g}State = undefined;",
+			"",
+			"export const ${TM_FILENAME_BASE/\\b-slice\\b/${1:/upcase}/g}Slice = createProducer(initalState, {});",
+			""
+		]
+	},
+}
