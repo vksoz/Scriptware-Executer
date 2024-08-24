@@ -5,3 +5,5 @@ export interface OnCharacterAdd {
 export interface OnCharacterRemove {
 	onCharacterRemove(character: character): void;
 }
+
+export * from "./character";

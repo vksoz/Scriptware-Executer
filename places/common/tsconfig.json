@@ -36,6 +36,11 @@
 			{
                 "transform": "rbxts-transformer-access"
             },
-		]
+		],
+		"paths": {
+			"common/*": ["../../common/src/*"],
+			"@common/*": ["../../common/src/*"]
+		}
 	},
+	"include": ["**/*"]
 }

@@ -1,6 +1,6 @@
 import React from "@rbxts/react";
+import { IS_EDIT } from "common/shared/constants/game";
 
-import { IS_EDIT } from "../../../../shared/constants/game";
 import UltraWideContainer from "../ultra-wide-container";
 import Group from "./group";
 

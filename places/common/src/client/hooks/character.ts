@@ -1,6 +1,6 @@
 import { Controller, Modding, OnStart } from "@flamework/core";
-
 import { Players } from "@rbxts/services";
+
 import { OnCharacterAdd, OnCharacterRemove } from ".";
 
 @Controller({ loadOrder: 1 })

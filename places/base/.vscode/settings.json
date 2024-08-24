@@ -10,5 +10,8 @@
 	},
 	"eslint.run": "onType",
 	"eslint.format.enable": true,
-	"typescript.tsdk": "node_modules/typescript/lib"
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"roblox-ts.boundary.paths.clientPaths": ["src/client", "../common/src/client"],
+	"roblox-ts.boundary.paths.serverPaths": ["src/server", "../common/src/server"]
+
 }
